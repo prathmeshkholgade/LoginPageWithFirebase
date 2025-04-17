@@ -6,7 +6,7 @@ class RoundButton extends StatelessWidget {
   final bool loading;
   const RoundButton({
     super.key,
-    required this.title,
+    this.title = "random",
     required this.onTap,
     required this.loading,
   });
