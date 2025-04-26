@@ -5,8 +5,11 @@ import 'package:loginpage/auth/login_screen.dart';
 import 'package:loginpage/auth/signup_screen.dart';
 import 'package:loginpage/splashscreen/splashscreen.dart';
 import 'package:loginpage/ui/home_screen.dart';
+import 'package:loginpage/ui/postadd_screen.dart';
 import 'package:loginpage/utils/utils.dart';
 import 'firebase_options.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +31,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: SignupScreen(),
+      home: MyHomePage(title: "great"), // SignupScreen(),
     );
   }
 }
